@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .show{
+      background:red;
+    }
+  </style>
+</head>
+<body>
+  <div class="btns">
+    <a href="" id="btn1" >slow</a>
+    <a href="" id="btn2" class='active'>normal</a>
+    <a href="" id="btn3">fast</a>
+  </div>
+  <script>
+      var btns =document.querySelector('.btns');
+      var btn = btns.children;
+      var i=0,len=btn.length
+      for(;i<len;i++){
+         b=btn[i]
+        
+         console.log(btn[i])
+         b.onclick=function(){
+
+          for(i=0;i<len;i++){
+            btn[i].className=''
+          }
+           
+            
+           this.className='show'
+           
+           return false
+         }
+      }
+  </script>
+</body>
+</html>

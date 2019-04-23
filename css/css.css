@@ -1,0 +1,41 @@
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+#code{
+  overflow: hidden;
+  height: 100%;
+}
+.content{
+  flex:1;
+  height:50%;
+}
+.Pikachu{
+  flex: 1;
+  
+}
+
+.button{
+  position: absolute;
+  top:0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+}
+.button >button{
+  padding: 10px;
+  margin: 10px;
+  background: #ddd;
+  color:white;
+  text-align: center;
+  border: none;
+}
+button.active{
+ box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+.button >button:focus{
+  outline:none;
+}
